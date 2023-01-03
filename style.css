@@ -1,0 +1,16 @@
+/* Basic style for html and body */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+/* Import style for font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Style for box-container */
+.box-container {
+  width: 960px;
+  margin: 0 auto;
+}
