@@ -116,6 +116,7 @@ button {
   background-color: transparent;
   color: #FFFFFF;
   transition: color 1s, background-color 1s;
+  cursor: pointer;
 }
 
 button:hover {
