@@ -10,9 +10,21 @@ html, body {
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 /* Styles for font family*/
-.nav-panel-company, .nav-panel-navigation li a {
+h1, p, button, .nav-panel-company, .nav-panel-navigation li a {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+}
+
+p, button {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 /* Style for box-container */
@@ -61,4 +73,52 @@ html, body {
 
 #contact {
   cursor: not-allowed;
+}
+
+/* Styles for header section */
+header {
+  height: 100vh;
+}
+
+.header-img {
+  background-image: url(image.jpg);
+  background-size: cover;
+  height: 100%;
+}
+
+.header-img-shadow {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+}
+
+.header-landing-page {
+  padding-left: 94px;
+  padding-top:178px;
+  padding-bottom: 181px;
+  width: 577px;
+}
+
+.header-h1 {
+  color: #FFFFFF;
+  margin-top: 0;
+  margin-bottom: 62px;
+}
+
+.header-p {
+  color: #FFFFFF;
+  margin-bottom: 42px;
+}
+
+button {
+  box-sizing: border-box;
+  padding: 14px 57px;
+  border: 3px solid #FFFFFF;
+  background-color: transparent;
+  color: #FFFFFF;
+  transition: color 1s, background-color 1s;
+}
+
+button:hover {
+  background-color: #FFFFFF;
+  color: #000000;
 }
