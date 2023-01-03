@@ -10,7 +10,7 @@ html, body {
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 /* Styles for font family*/
-h1, p, button, .nav-panel-company, .nav-panel-navigation li a {
+h1, p, button, small, .nav-panel-company, .nav-panel-navigation li a {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
 }
@@ -21,7 +21,7 @@ h1 {
   line-height: 42px;
 }
 
-p, button {
+p, button, small {
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
@@ -179,4 +179,71 @@ aside {
   order: 1;
   margin-left: 0;
   margin-right: 60px;
+}
+
+/* Styles for section with services */
+section {
+  display: flex;
+  flex-direction: column;
+  background-color: #405D78;
+}
+
+.ofert-h1 {
+  color: #FFFFFF;
+  margin: 0;
+  padding-left: 110px;
+  padding-top: 50px;
+}
+
+.ofert-info {
+  display: flex;
+  flex-wrap: wrap;
+  width: 720px;
+  gap: 62.63px 63px;
+  justify-content: space-between;
+  align-self: center;
+  padding-bottom: 64.17px;
+  padding-top: 81.67px;
+  margin: 0 auto;
+}
+
+.ofert-info div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 198px;
+  height: 193.78px;
+  background-color: #F1F1F1;
+  transition: 0.5s;
+}
+
+.ofert-p {
+  font-weight: 400;
+  font-size: 24px;
+  color:#000000;
+}
+
+.ofert-news {
+  font-weight: 400;
+  color: #000000;
+}
+
+.ofert-info div:hover {
+  transform: scale(1.05);
+}
+
+.ofert-info div:first-child {
+  position: relative;
+}
+
+.ofert-info div:first-child::after {
+  content: "";
+  width: 22px;
+  height: 22px;
+  border-radius: 50px;
+  background-color: #e07a64;
+  position: absolute;
+  top: -11px;
+  left: -11px;
 }
