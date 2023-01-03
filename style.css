@@ -122,3 +122,61 @@ button:hover {
   background-color: #FFFFFF;
   color: #000000;
 }
+
+/* Styles for aside section */
+aside {
+  background-color: #F1F1F1;
+  padding: 51px 54px 68px 34px;
+}
+
+.div-flex {
+  display: flex;
+  flex-direction: column;
+  padding-left: 94px;
+}
+
+.aside-h1 {
+  color: #152D41;
+  margin-top: 0;
+  margin-bottom: 78px;
+}
+
+.employees {
+  display: flex;
+  align-items: center;
+}
+
+.employees-img {
+  background-image: url(employee-img.jpg);
+  border-radius: 50%;
+  width: 197px;
+  height: 197px;
+  flex-shrink: 0;
+  background-size: cover;
+  background-position: center;
+  order: 1;
+}
+
+.employees-info {
+  margin-left: 60px;
+  order: 2;
+}
+
+.employees-info p {
+  font-weight: normal;
+  color:#000000;
+}
+
+.employees-info p:first-child {
+  font-weight: 700;
+}
+
+.employees:nth-of-type(even) .employees-img{
+  order: 2;
+}
+
+.employees:nth-of-type(even) .employees-info {
+  order: 1;
+  margin-left: 0;
+  margin-right: 60px;
+}
