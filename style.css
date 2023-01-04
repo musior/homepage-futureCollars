@@ -10,12 +10,12 @@ html, body {
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 /* Styles for font family*/
-h1, p, button, small, .nav-panel-company, .nav-panel-navigation li a {
+h1, h2, p, button, small, .nav-panel-company, .nav-panel-navigation li a {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
 }
 
-h1 {
+h1, h2 {
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
@@ -47,7 +47,6 @@ p, button, small {
   font-size: 18px;
   line-height: 21px;
   color: #FFFFFF;
-  padding-left: 94px;
 }
 
 .nav-panel-navigation {
@@ -65,10 +64,6 @@ p, button, small {
   line-height: 21px;
   color: #F1F1F1;
   padding: 15px;
-}
-
-.nav-panel-navigation li:last-child {
-  padding-right: 90px;
 }
 
 #contact {
@@ -92,10 +87,11 @@ header {
 }
 
 .header-landing-page {
-  padding-left: 94px;
-  padding-top:178px;
-  padding-bottom: 181px;
-  width: 577px;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 100vh;
+  justify-content: center;
 }
 
 .header-h1 {
@@ -117,6 +113,7 @@ button {
   color: #FFFFFF;
   transition: color 1s, background-color 1s;
   cursor: pointer;
+  width: 164px;
 }
 
 button:hover {
@@ -127,16 +124,15 @@ button:hover {
 /* Styles for aside section */
 aside {
   background-color: #F1F1F1;
-  padding: 51px 54px 68px 34px;
+  padding: 55px 0;
 }
 
 .div-flex {
   display: flex;
   flex-direction: column;
-  padding-left: 94px;
 }
 
-.aside-h1 {
+.aside-h2 {
   color: #152D41;
   margin-top: 0;
   margin-bottom: 78px;
@@ -180,6 +176,7 @@ aside {
   order: 1;
   margin-left: 0;
   margin-right: 60px;
+  text-align: right;
 }
 
 /* Styles for section with services */
@@ -187,13 +184,12 @@ section {
   display: flex;
   flex-direction: column;
   background-color: #405D78;
+  padding: 55px 0;
 }
 
-.ofert-h1 {
+.ofert-h2 {
   color: #FFFFFF;
   margin: 0;
-  padding-left: 110px;
-  padding-top: 50px;
 }
 
 .ofert-info {
