@@ -29,7 +29,7 @@ p, button, small {
 
 /* Style for box-container */
 .box-container {
-  width: 960px;
+  width: 96%;
   margin: 0 auto;
 }
 
@@ -50,24 +50,7 @@ p, button, small {
 }
 
 .nav-panel-navigation {
-  list-style: none;
-}
-
-.nav-panel-navigation li {
-  display: inline;
-}
-
-.nav-panel-navigation li a {
-  text-decoration: none;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-  color: #F1F1F1;
-  padding: 15px;
-}
-
-#contact {
-  cursor: not-allowed;
+  display: none;
 }
 
 /* Styles for header section */
@@ -97,7 +80,7 @@ header {
   color: #FFFFFF;
   margin-top: 0;
   margin-bottom: 62px;
-  width: 60%;
+  width: 80%;
 }
 
 .header-p {
@@ -111,20 +94,14 @@ button {
   border: 3px solid #FFFFFF;
   background-color: transparent;
   color: #FFFFFF;
-  transition: color 1s, background-color 1s;
   cursor: pointer;
   width: 164px;
-}
-
-button:hover {
-  background-color: #FFFFFF;
-  color: #000000;
 }
 
 /* Styles for aside section */
 aside {
   background-color: #F1F1F1;
-  padding: 55px 0;
+  padding: 34px 0;
 }
 
 .div-flex {
@@ -135,12 +112,14 @@ aside {
 .aside-h2 {
   color: #152D41;
   margin-top: 0;
-  margin-bottom: 78px;
+  margin-bottom: 58px;
+  text-align: center;
 }
 
 .employees {
   display: flex;
   align-items: center;
+  flex-direction: column;
 }
 
 .employees-img {
@@ -155,7 +134,8 @@ aside {
 }
 
 .employees-info {
-  margin-left: 60px;
+  margin: 56.5px 0 54px 0;
+  text-align: justify;
   order: 2;
 }
 
@@ -169,40 +149,29 @@ aside {
   padding-bottom: 20px;
 }
 
-.employees:nth-of-type(even) .employees-img{
-  order: 2;
-}
-
-.employees:nth-of-type(even) .employees-info {
-  order: 1;
-  margin-left: 0;
-  margin-right: 60px;
-  text-align: right;
-}
-
 /* Styles for section with services */
 section {
   display: flex;
   flex-direction: column;
   background-color: #405D78;
-  padding: 55px 0;
+  padding: 34px 0;
 }
 
 .offer-h2 {
   color: #FFFFFF;
   margin: 0;
+  font-size: 26px;
+  line-height: 30px;
+  text-align: center;
 }
 
 .offer-info {
   display: flex;
-  flex-wrap: wrap;
-  width: 720px;
-  gap: 62.63px 63px;
-  justify-content: space-between;
-  align-self: center;
-  padding-bottom: 64.17px;
-  padding-top: 81.67px;
-  margin: 0 auto;
+  flex-direction: column;
+  gap: 35px;
+  align-items: center;
+  padding-bottom: 45px;
+  padding-top: 59px;
 }
 
 .offer-info div {
@@ -210,10 +179,9 @@ section {
   align-items: center;
   justify-content: center;
   text-align: center;
-  width: 198px;
-  height: 193.78px;
+  width: 339px;
+  height: 331px;
   background-color: #F1F1F1;
-  transition: 0.5s;
 }
 
 .offer-p {
@@ -229,10 +197,6 @@ section {
   font-size: 18px;
   font-weight: 400;
   color: #000000;
-}
-
-.offer-info div:hover {
-  transform: scale(1.05);
 }
 
 .offer-info div:first-child {
@@ -258,15 +222,20 @@ section {
 
 .footer-info {
   display: flex;
-  height: 71px;
+  flex-direction: column;
+  height: 147px;
   background-color: #4E4E4E;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .footer-p {
   margin: 0;
   color: #FFFFFF;
+}
+
+.footer-icons {
+  margin-top: 15px;
 }
 
 .footer-info i {
@@ -280,4 +249,124 @@ section {
 
 .footer-icons a:first-child {
   padding-right: 18px;
+}
+@media screen and (min-width: 768px) {
+  
+}
+@media screen and (min-width: 1024px) {
+  /* Style for box-container */
+  .box-container {
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  /* Style for navigation panel */
+  .nav-panel-navigation {
+    display: block;
+    list-style: none;
+  }
+
+  .nav-panel-navigation li {
+    display: inline;
+  }
+
+  .nav-panel-navigation li a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #F1F1F1;
+    padding: 15px;
+  }
+  
+  #contact {
+    cursor: not-allowed;
+  }
+
+  /* Styles for header section */
+  .header-h1 {
+    width: 60%;
+  }
+  button {
+    transition: color 1s, background-color 1s;
+  }
+
+  button:hover {
+    background-color: #FFFFFF;
+    color: #000000;
+  }
+
+  /* Styles for aside section */
+  aside {
+    padding: 55px 0;
+  }
+
+  .aside-h2 {
+    margin-bottom: 78px;
+    text-align: start;
+  }
+
+  .employees {
+    flex-direction: row;
+  }
+
+  .employees-info {
+    margin-left: 60px;
+  }
+
+  .employees:nth-of-type(even) .employees-img{
+    order: 2;
+  }
+  
+  .employees:nth-of-type(even) .employees-info {
+    order: 1;
+    margin-left: 0;
+    margin-right: 60px;
+    text-align: right;
+  }
+
+  /* Styles for section with services */
+  section {
+    padding: 55px 0;
+  }
+
+  .offer-h2 {
+    font-size: 36px;
+    line-height: 42px;
+    text-align: start;
+  }
+
+  .offer-info {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 720px;
+    gap: 62.63px 63px;
+    justify-content: space-between;
+    align-self: center;
+    padding-bottom: 64.17px;
+    padding-top: 81.67px;
+    margin: 0 auto;
+  }
+
+  .offer-info div {
+    width: 198px;
+    height: 193.78px;
+    transition: 0.5s;
+  }
+
+  .offer-info div:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Styles for footer section */
+  .footer-info {
+    flex-direction: row;
+    height: 71px;
+    justify-content: space-between;
+  }
+
+  .footer-icons {
+    margin-top: 0;
+  }
 }
