@@ -89,7 +89,6 @@ header {
 .header-landing-page {
   display: flex;
   flex-direction: column;
-  width: 60%;
   height: 100vh;
   justify-content: center;
 }
@@ -98,6 +97,7 @@ header {
   color: #FFFFFF;
   margin-top: 0;
   margin-bottom: 62px;
+  width: 60%;
 }
 
 .header-p {
@@ -188,12 +188,12 @@ section {
   padding: 55px 0;
 }
 
-.ofert-h2 {
+.offer-h2 {
   color: #FFFFFF;
   margin: 0;
 }
 
-.ofert-info {
+.offer-info {
   display: flex;
   flex-wrap: wrap;
   width: 720px;
@@ -205,7 +205,7 @@ section {
   margin: 0 auto;
 }
 
-.ofert-info div {
+.offer-info div {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -216,26 +216,30 @@ section {
   transition: 0.5s;
 }
 
-.ofert-p {
+.offer-p {
   font-weight: 400;
   font-size: 24px;
   color:#000000;
 }
 
-.ofert-news {
+.offer-news {
+  display: block;
+  content: '\A';
+  white-space: pre;
+  font-size: 18px;
   font-weight: 400;
   color: #000000;
 }
 
-.ofert-info div:hover {
+.offer-info div:hover {
   transform: scale(1.05);
 }
 
-.ofert-info div:first-child {
+.offer-info div:first-child {
   position: relative;
 }
 
-.ofert-info div:first-child::after {
+.offer-info div:first-child::after {
   content: "";
   width: 22px;
   height: 22px;
