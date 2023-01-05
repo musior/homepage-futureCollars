@@ -241,24 +241,18 @@ section {
 
 .footer-info i {
   color:#FFFFFF;
-  transition: 0.5s;
-}
-
-.footer-info i:hover {
-  transform: scale(1.05);
 }
 
 .footer-icons a:first-child {
   padding-right: 18px;
 }
+
+/* Media Queries for tablets */
+
 @media screen and (min-width: 768px) {
-  
-}
-@media screen and (min-width: 1024px) {
   /* Style for box-container */
   .box-container {
-    width: 960px;
-    margin: 0 auto;
+    width: 720px;
   }
 
   /* Style for navigation panel */
@@ -279,7 +273,45 @@ section {
     color: #F1F1F1;
     padding: 15px;
   }
-  
+
+  /* Styles for section with services */
+  .offer-info {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 35px;
+    padding-bottom: 45px;
+    padding-top: 59px;
+  }
+
+  .offer-info div {
+    width: 215px;
+    height: 215px;
+  }
+
+  /* Styles for footer section */
+  .footer-info {
+    flex-direction: row;
+    height: 71px;
+    justify-content: space-between;
+  }
+
+  .footer-p {
+    text-align: start;
+  }
+
+  .footer-icons {
+    margin-top: 0;
+  }
+}
+
+/* Media Queries for laptops */
+
+@media screen and (min-width: 1024px) {
+  /* Style for box-container */
+  .box-container {
+    width: 960px;
+  }
+
   #contact {
     cursor: not-allowed;
   }
@@ -338,13 +370,9 @@ section {
   }
 
   .offer-info {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
     width: 720px;
     gap: 62.63px 63px;
     justify-content: space-between;
-    align-self: center;
     padding-bottom: 64.17px;
     padding-top: 81.67px;
     margin: 0 auto;
@@ -359,19 +387,13 @@ section {
   .offer-info div:hover {
     transform: scale(1.05);
   }
-  
+
   /* Styles for footer section */
-  .footer-info {
-    flex-direction: row;
-    height: 71px;
-    justify-content: space-between;
+  .footer-info i {
+    transition: 0.5s;
   }
 
-  .footer-p {
-    text-align: start;
-  }
-
-  .footer-icons {
-    margin-top: 0;
-  }
+  .footer-info i:hover {
+    transform: scale(1.05);
+  }  
 }
