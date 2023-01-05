@@ -232,6 +232,7 @@ section {
 .footer-p {
   margin: 0;
   color: #FFFFFF;
+  text-align: center;
 }
 
 .footer-icons {
@@ -364,6 +365,10 @@ section {
     flex-direction: row;
     height: 71px;
     justify-content: space-between;
+  }
+
+  .footer-p {
+    text-align: start;
   }
 
   .footer-icons {
