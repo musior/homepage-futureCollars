@@ -166,6 +166,7 @@ aside {
 
 .employees-info p:first-child {
   font-weight: 700;
+  padding-bottom: 20px;
 }
 
 .employees:nth-of-type(even) .employees-img{
@@ -264,12 +265,15 @@ section {
   color: #FFFFFF;
 }
 
-.footer-info svg {
-  width: 31px;
-  height: 31px;
+.footer-info i {
+  color:#FFFFFF;
   transition: 0.5s;
 }
 
-.footer-info svg:hover {
+.footer-info i:hover {
   transform: scale(1.05);
+}
+
+.footer-icons a:first-child {
+  padding-right: 18px;
 }
